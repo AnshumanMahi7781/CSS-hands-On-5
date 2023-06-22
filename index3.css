@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+.MainContainer__Sky {
+    border: 12px solid;
+    border-color: white green white orange;
+    height: 95vh;
+    background-image: url(./Images/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.Container__TopText {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: -40px;
+
+}
+
+.Container__TopText p {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.Container__TopText .FirstWord {
+    background-color: orange;
+}
+
+.Container__TopText .SecondWord {
+    background-color: white;
+
+}
+
+.Container__TopText .ThirdWord {
+    background-color: green;
+}
+
+.Container__Road {
+    width: 500%;
+    height: 205px;
+    background-image: url(./Images/road.jpg);
+    position: absolute;
+    bottom: 0;
+    animation: MovingObject 4s linear infinite;
+}
+
+@keyframes MovingObject {
+    100% {
+        transform: translate(-3000px);
+    }
+
+}
+
+.Container__City {
+    width: 500%;
+    height: 200px;
+    background-image: url(./Images/city.png);
+    position: absolute;
+    bottom: 205px;
+    animation: MovingObject 20s linear infinite;
+}
+
+.CarImg {
+    width: 400px;
+    position: absolute;
+    bottom: 115px;
+    left: 34.5%;
+}
+
+.Wheel {
+    width: 70px;
+    position: absolute;
+    bottom: 120px;
+    animation: RotationObject 1.5s linear infinite;
+}
+
+.Left__CarWheel {
+    left: 36.9%;
+}
+
+.Right__CarWheel {
+    left: 53.2%;
+}
+
+@keyframes RotationObject {
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.IndianFlag {
+    z-index: 100;
+    height: 150px;
+    position: absolute;
+    bottom: 195px;
+    left: 53%;
+    transform: skew(-15deg);
+}
+
+
+.SunImage {
+    width: 80px;
+    position: absolute;
+    top: 50px;
+    left: 90%;
+    animation: SunMovement 180s linear infinite;
+}
+
+@keyframes SunMovement {
+    100% {
+        transform: translate(-1200px);
+    }
+
+}

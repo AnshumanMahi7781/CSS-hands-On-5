@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.FlexBox {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(251, 251, 93);
+}
+
+h1 {
+    text-align: center;
+}
+
+.ListContainer {
+    justify-content: center;
+    font-weight: bold;
+    width: 80%;
+}
+
+
+ol li {
+    margin-top: 10px;
+}
+
+.box {
+    background-color: rgb(67, 209, 67);
+    width: 100px;
+    height: 100px;
+    Transition-property: width;
+}
+
+.box:hover {
+    width: 300px;
+}
+
+
+#Box-1 {
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+#Box-2 {
+    Transition-property: width, height;
+    transition-duration: 2s,3s;
+    transition-timing-function: ease-out;
+}
+
+#Box-2:hover {
+    width: 250px;
+    height: 300px;
+}
+
+#Box-3 {
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+#Box-4 {
+    transition-duration: 1.5s;
+    transition-timing-function: linear;
+}
+
+
+#Box-5 {
+    transition-duration: 2.5s;
+    transition-timing-function: ease;
+}
+
+
+#Box-6 {
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+
+#Box-7 {
+    transition-duration: 3.5s;
+}
+
+
+
+
+a {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#BackBtn {
+    color: brown;
+}
+
+#NextBtn {
+    color: blue;
+}
