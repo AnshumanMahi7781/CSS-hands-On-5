@@ -84,6 +84,19 @@ a {
         transform: skew(-20deg);
     }
 }
+@keyframes SkewYAnimation {
+    0% {
+        transform: skewY(-20deg);
+    }
+
+    50% {
+        transform: skewY(20deg);
+    }
+
+    100% {
+        transform: skewY(-20deg);
+    }
+}
 
 @keyframes RotationAnimation {
     0% {
@@ -150,8 +163,7 @@ a {
 }
 
 .SkewReverseBox {
-    animation: alternate-reverse;
-    animation-name: SkewAnimation;
+    animation-name: SkewYAnimation;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
