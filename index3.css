@@ -74,7 +74,7 @@
     width: 400px;
     position: absolute;
     bottom: 115px;
-    left: 34.5%;
+    left: 516px;
 }
 
 .Wheel {
@@ -85,11 +85,11 @@
 }
 
 .Left__CarWheel {
-    left: 36.9%;
+    left: 552.5px;
 }
 
 .Right__CarWheel {
-    left: 53.2%;
+    left: 797.5px;
 }
 
 @keyframes RotationObject {
@@ -104,7 +104,7 @@
     height: 90px;
     position: absolute;
     bottom: 205px;
-    left: 54%;
+    left: 800px;
 }
 
 
